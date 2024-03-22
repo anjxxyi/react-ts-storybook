@@ -1,15 +1,15 @@
-import type { Meta, StoryObj } from '@storybook/react';
-import ErrorMessage from '../components/ErrorMessage';
+import type { Meta, StoryObj } from "@storybook/react";
+import ErrorMessage from "../components/ErrorMessage";
 
 const meta = {
-  title: 'Text/ErrorMessage',
+  title: "Text/ErrorMessage",
   component: ErrorMessage,
   parameters: {
-    layout: 'centered',
+    layout: "centered",
   },
-  tags: ['autodocs'],
+  tags: ["autodocs"],
   argTypes: {
-    children: { control: 'text', description: "ErrorMessage의 내용" },
+    children: { control: "text", description: "ErrorMessage의 내용" },
   },
 } satisfies Meta<typeof ErrorMessage>;
 
@@ -18,6 +18,6 @@ type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
   args: {
-    children: '에러메세지는 여기로',
+    children: "에러메세지는 여기로",
   },
 };

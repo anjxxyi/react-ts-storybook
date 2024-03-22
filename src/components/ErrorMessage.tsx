@@ -1,7 +1,7 @@
 interface IErrorMessageProps {
-    children?: string;
+  children?: string;
 }
 
 export default function ErrorMessage({ children }: IErrorMessageProps) {
-    return <p className="text-xs text-rose-600">{children}</p>
+  return <p className="text-xs text-rose-600">{children}</p>;
 }

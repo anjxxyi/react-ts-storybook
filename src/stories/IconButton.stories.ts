@@ -9,10 +9,17 @@ const meta = {
   },
   tags: ["autodocs"],
   argTypes: {
-    alt: { control: "text", description: "이미지의 alt 속성", defaultValue: "icon" },
-    iconPath: { control: "text", description: "이미지의 경로", defaultValue: "" },
+    alt: {
+      control: "text",
+      description: "이미지의 alt 속성",
+      defaultValue: "icon",
+    },
+    iconPath: {
+      control: "text",
+      description: "이미지의 경로",
+      defaultValue: "",
+    },
     onClick: { action: "clicked", description: "이미지의 클릭 이벤트" },
-
   },
 } satisfies Meta<typeof IconButton>;
 

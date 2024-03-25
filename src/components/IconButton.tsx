@@ -1,7 +1,7 @@
 interface IIconButtonProps {
-  alt?: string;
-  iconPath?: string;
-  onClick?: React.MouseEventHandler<HTMLButtonElement>;
+  alt: string;
+  iconPath: string;
+  onClick: React.MouseEventHandler<HTMLButtonElement>;
 }
 
 export default function IconButton({

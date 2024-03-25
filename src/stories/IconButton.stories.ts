@@ -30,5 +30,6 @@ export const Default: Story = {
   args: {
     alt: "icon",
     iconPath: "/icons/ic-delete-dark.svg",
+    onClick: () => {},
   },
 };

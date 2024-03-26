@@ -1,4 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/react";
+import { fn } from "@storybook/test";
 import IconButton from "../components/IconButton";
 
 const meta = {
@@ -21,6 +22,9 @@ const meta = {
     },
     onClick: { action: "clicked", description: "이미지의 클릭 이벤트" },
   },
+  args: {
+    onClick: fn(),
+  },
 } satisfies Meta<typeof IconButton>;
 
 export default meta;
@@ -30,6 +34,5 @@ export const Default: Story = {
   args: {
     alt: "icon",
     iconPath: "/icons/ic-delete-dark.svg",
-    onClick: () => {},
   },
 };

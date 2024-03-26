@@ -1,4 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/react";
+import { fn } from "@storybook/test";
 import NavigationBar from "../components/NavigationBar";
 
 const meta = {
@@ -50,6 +51,10 @@ const meta = {
       description: "닫기 버튼 클릭 이벤트",
     },
   },
+  args: {
+    onBackButtonClick: fn(),
+    onCloseButtonClick: fn(),
+  },
 } satisfies Meta<typeof NavigationBar>;
 
 export default meta;
@@ -62,7 +67,5 @@ export const Default: Story = {
     showTitle: true,
     isDark: false,
     title: "타이틀",
-    onBackButtonClick: () => {},
-    onCloseButtonClick: () => {},
   },
 };

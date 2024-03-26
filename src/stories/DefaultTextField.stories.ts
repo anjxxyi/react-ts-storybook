@@ -1,4 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/react";
+import { fn } from "@storybook/test";
 import DefaultTextField from "../components/DefaultTextField";
 
 const meta = {
@@ -46,6 +47,10 @@ const meta = {
     },
     onChange: { action: "changed", description: "텍스트 필드 값 변경 이벤트" },
   },
+  args: {
+    onIconClick: fn(),
+    onChange: fn(),
+  },
 } satisfies Meta<typeof DefaultTextField>;
 
 export default meta;
@@ -60,7 +65,5 @@ export const Default: Story = {
     value: "",
     errorMessage: "텍스트를 확인해 주세요.",
     isError: false,
-    onIconClick: () => {},
-    onChange: () => {},
   },
 };

@@ -1,4 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/react";
+import { fn } from "@storybook/test";
 import PrimaryButton from "../components/PrimaryButton";
 
 const meta = {
@@ -28,6 +29,9 @@ const meta = {
     disabled: { control: "boolean", description: "Button의 비활성화 여부", defaultValue: true },
 
     onClick: { action: "clicked", description: "Button의 클릭 이벤트" },
+  },
+  args: {
+    onClick: fn(),
   },
 } satisfies Meta<typeof PrimaryButton>;
 

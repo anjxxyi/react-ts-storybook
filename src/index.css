@@ -2,9 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-body { font-family: "Noto Sans KR"; } 
+body { font-family: "Noto Sans KR"; font-size: 16px; } 
 
 @layer components { 
-  .text-field > p { @apply absolute; } 
+  .text-field > div { @apply pb-1; }
+  .text-field input { @apply block pr-6; }
+  .text-field button { @apply absolute right-0 top-1/2 -translate-y-1/2; } 
+  .text-field > p { @apply absolute mt-1; } 
+  
   .navigation-title-wrapper > button { @apply mr-[7px]; }
  }

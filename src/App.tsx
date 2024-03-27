@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./App.css";
 import DefaultTextField from "./components/DefaultTextField";
 import Label from "./components/Label";
+import PrimaryButton from "./components/PrimaryButton";
 
 function App() {
   const [isError, setIsError] = useState(false);
@@ -36,9 +37,14 @@ function App() {
           onIconClick={() => {}}
         />
       </div>
-      <button className="mt-6 font-semibold" onClick={() => setIsError((prev) => !prev)}>
-        Error Toggle Button
-      </button>
+      <div className="mt-5">
+        <PrimaryButton
+          children="Error Toggle Button"
+          disabled={false}
+          theme="dark"
+          onClick={() => setIsError((prev) => !prev)}
+        />
+      </div>
     </>
   );
 }

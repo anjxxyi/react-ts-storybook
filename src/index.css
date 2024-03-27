@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 * { box-sizing: border-box; }
-body { font-family: "Noto Sans KR"; font-size: 16px; } 
+body { font-family: "Noto Sans KR"; font-size: 14px; } 
 
 @layer components { 
   .text-field > div { @apply pb-1; }

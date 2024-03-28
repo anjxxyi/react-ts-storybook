@@ -30,7 +30,7 @@ export default function PrimaryButton({
       className={`
         w-full 
         p-4 
-        rounded-primary-button 
+        rounded-button-default 
         ${disabledStyle}
         ${color[theme]}
       `}

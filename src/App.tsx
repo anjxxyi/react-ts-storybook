@@ -19,7 +19,7 @@ function App() {
           />
         </div>
       </div>
-      <div className="p-10 border border-solid border-mono300 bg-white rounded-primary-button">
+      <div className="p-10 border border-solid border-mono300 bg-white rounded-button-default">
         <h1 className="font-bold text-2xl mb-10">✏️ TextField</h1>
         <div className="mb-5">
           <Label htmlFor="email">이메일</Label>

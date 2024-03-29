@@ -9,7 +9,7 @@ const meta = {
   },
   tags: ["autodocs"],
   argTypes: {
-    children: { control: "text", description: "ErrorMessage의 내용" },
+    children: { control: "text", description: "에러메세지 내용" },
   },
 } satisfies Meta<typeof ErrorMessage>;
 
@@ -18,6 +18,6 @@ type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
   args: {
-    children: "에러메세지는 여기로",
+    children: "올바른 값이 아닙니다.",
   },
 };

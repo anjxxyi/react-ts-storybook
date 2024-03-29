@@ -10,40 +10,40 @@ const meta = {
   },
   tags: ["autodocs"],
   argTypes: {
-    errorMessage: { control: "text", description: "에러 메세지" },
+    errorMessage: { control: "text", description: "에러 메세지 텍스트" },
     iconPath: {
       control: "text",
-      description: "아이콘 이미지의 경로",
+      description: "아이콘 이미지 소스 URL",
       defaultValue: "",
     },
     iconAlt: {
       control: "text",
-      description: "아이콘 이미지의 alt 속성",
+      description: "아이콘 이미지 대체 텍스트",
       defaultValue: "icon",
     },
     id: {
       control: "text",
-      description: "텍스트 필드의 ID",
+      description: "텍스트 필드 id",
       defaultValue: "",
     },
     placeholder: {
       control: "text",
-      description: "텍스트 필드의 placeholder",
+      description: "텍스트 필드 도움말",
       defaultValue: "텍스트를 입력해 주세요.",
     },
     value: {
       control: "text",
-      description: "텍스트 필드의 값",
+      description: "텍스트 필드 값",
       defaultValue: "",
     },
     isError: {
       control: "boolean",
-      description: "에러 상태 여부",
+      description: "에러 여부",
       defaultValue: false,
     },
     onIconClick: {
       action: "clicked",
-      description: "아이콘 이미지의 클릭 이벤트",
+      description: "아이콘 이미지 클릭 이벤트",
     },
     onChange: { action: "changed", description: "텍스트 필드 값 변경 이벤트" },
   },

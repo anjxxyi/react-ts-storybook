@@ -10,11 +10,11 @@ const meta = {
   },
   tags: ["autodocs"],
   argTypes: {
-    children: { control: "text", description: "Button의 내용" },
-    onClick: { action: "clicked", description: "Button의 클릭 이벤트" },
+    children: { control: "text", description: "버튼 텍스트", defaultValue: "tag" },
+    onClick: { action: "clicked", description: "버튼 클릭 이벤트" },
     isChecked: {
       control: "boolean",
-      description: "Button의 활성화 여부",
+      description: "버튼 활성화 여부",
       defaultValue: false,
     },
   },
@@ -28,7 +28,7 @@ type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
   args: {
-    children: "Button",
+    children: "tag",
     isChecked: false,
   },
 };

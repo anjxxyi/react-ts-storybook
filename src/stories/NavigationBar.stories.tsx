@@ -66,6 +66,6 @@ export const Default: Story = {
     showCloseButton: true,
     showTitle: true,
     isDark: false,
-    title: "타이틀",
+    title: "title",
   },
 };

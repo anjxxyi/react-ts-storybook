@@ -12,25 +12,25 @@ const meta = {
   argTypes: {
     iconAlt: {
       control: "text",
-      description: "이미지의 alt 속성",
+      description: "이미지 대체 텍스트",
       defaultValue: "icon",
     },
     iconPath: {
       control: "text",
-      description: "이미지의 경로",
+      description: "이미지 소스 URL",
       defaultValue: "",
     },
     text: {
       control: "text",
-      description: "버튼의 내용",
-      defaultValue: "",
+      description: "버튼 텍스트",
+      defaultValue: "category",
     },
     isDarked: {
       control: "boolean",
-      description: "다크모드",
+      description: "다크모드 여부",
       defaultValue: false,
     },
-    onClick: { action: "clicked", description: "버튼의 클릭 이벤트" },
+    onClick: { action: "clicked", description: "버튼 클릭 이벤트" },
   },
   args: {
     onClick: fn(),
@@ -42,9 +42,9 @@ type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
   args: {
-    iconAlt: "icon",
+    iconAlt: "category",
     iconPath: "/icons/ic-category-dark.svg",
     isDarked: false,
-    text: "Button",
+    text: "category",
   },
 };

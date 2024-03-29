@@ -3,7 +3,7 @@ import { fn } from "@storybook/test";
 import PrimaryButton from "../components/PrimaryButton";
 
 const meta = {
-  title: "Button/PrimaryButton",
+  title: "Buttons/PrimaryButton",
   component: PrimaryButton,
   parameters: {
     layout: "centered",
@@ -22,13 +22,13 @@ const meta = {
         type: "select",
         options: ["dark", "light", "social", "text"],
       },
-      description: "Button의 테마",
+      description: "버튼 테마",
       defaultValue: "dark",
     },
-    children: { control: "text", description: "Button의 내용" },
-    disabled: { control: "boolean", description: "Button의 비활성화 여부", defaultValue: true },
+    children: { control: "text", description: "버튼 텍스트" },
+    disabled: { control: "boolean", description: "버튼 비활성화 여부", defaultValue: true },
 
-    onClick: { action: "clicked", description: "Button의 클릭 이벤트" },
+    onClick: { action: "clicked", description: "버튼 클릭 이벤트" },
   },
   args: {
     onClick: fn(),
@@ -40,7 +40,7 @@ type Story = StoryObj<typeof meta>;
 
 export const Dark: Story = {
   args: {
-    children: "Button",
+    children: "button",
     theme: "dark",
     disabled: false,
   },
@@ -48,7 +48,7 @@ export const Dark: Story = {
 
 export const Light: Story = {
   args: {
-    children: "Button",
+    children: "button",
     theme: "light",
     disabled: false,
   },
@@ -61,7 +61,7 @@ export const Light: Story = {
 
 export const Social: Story = {
   args: {
-    children: "Button",
+    children: "button",
     theme: "social",
     disabled: false,
   },
@@ -69,7 +69,7 @@ export const Social: Story = {
 
 export const Text: Story = {
   args: {
-    children: "Button",
+    children: "button",
     theme: "text",
     disabled: false,
   },
@@ -77,7 +77,7 @@ export const Text: Story = {
 
 export const Disabled: Story = {
   args: {
-    children: "Button",
+    children: "button",
     theme: "dark",
     disabled: true,
   },

@@ -12,15 +12,15 @@ const meta = {
   argTypes: {
     alt: {
       control: "text",
-      description: "이미지의 alt 속성",
+      description: "이미지 대체 텍스트",
       defaultValue: "icon",
     },
     iconPath: {
       control: "text",
-      description: "이미지의 경로",
+      description: "이미지 소스 URL",
       defaultValue: "",
     },
-    onClick: { action: "clicked", description: "이미지의 클릭 이벤트" },
+    onClick: { action: "clicked", description: "이미지 클릭 이벤트" },
   },
   args: {
     onClick: fn(),
@@ -32,7 +32,7 @@ type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
   args: {
-    alt: "icon",
+    alt: "delete",
     iconPath: "/icons/ic-delete-dark.svg",
   },
 };

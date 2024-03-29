@@ -35,7 +35,10 @@ export default function DefaultTextField({
   return (
     <div className="relative text-field">
       <div
-        className={`text-primary border-b border-solid ${borderColor}`}
+        className={`
+          text-primary 
+          border-b border-solid ${borderColor}
+        `}
         onFocus={() => setIsFocused(true)}
         onBlur={() => setIsFocused(false)}
       >

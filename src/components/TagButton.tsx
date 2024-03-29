@@ -15,7 +15,13 @@ export default function TagButton({
 
   return (
     <button
-      className={`rounded-tag-button px-3.5 pt-1 pb-1.5 border border-solid border-white font-medium ${buttonStyle}`}
+      className={`
+        rounded-tag-button 
+        px-3.5 pt-1 pb-1.5 
+        border border-solid border-white 
+        font-medium 
+        ${buttonStyle}
+      `}
       onClick={onClick}
     >
       {children}

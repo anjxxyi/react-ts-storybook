@@ -16,7 +16,7 @@ export default function CategoryButton({
   onClick,
 }: ICategoryButtonProps) {
   const buttonStyle = isDarked
-    ? "border-white text-white "
+    ? "border-white text-mono100 "
     : "border-primary text-primary";
     
   return (

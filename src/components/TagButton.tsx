@@ -10,8 +10,8 @@ export default function TagButton({
   onClick,
 }: ITagButtonProps) {
   const buttonStyle = isChecked
-    ? "text-white bg-darkO-opacity"
-    : "text-primary bg-white";
+    ? "text-primary bg-white"
+    : "text-white bg-dark-opacity";
 
   return (
     <button

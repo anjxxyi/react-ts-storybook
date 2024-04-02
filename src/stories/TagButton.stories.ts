@@ -15,7 +15,7 @@ const meta = {
     isChecked: {
       control: "boolean",
       description: "버튼 활성화 여부",
-      defaultValue: false,
+      defaultValue: true,
     },
   },
   args: {
@@ -29,6 +29,6 @@ type Story = StoryObj<typeof meta>;
 export const Default: Story = {
   args: {
     children: "tag",
-    isChecked: false,
+    isChecked: true,
   },
 };

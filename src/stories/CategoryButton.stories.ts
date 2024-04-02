@@ -42,7 +42,7 @@ type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
   args: {
-    iconAlt: "category",
+    iconAlt: "icon",
     iconPath: "/icons/ic-category-dark.svg",
     isDarked: false,
     text: "category",

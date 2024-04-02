@@ -3,7 +3,7 @@ import { fn } from "@storybook/test";
 import TagList from "../components/TagList";
 
 const meta = {
-  title: "Buttons/TagList",
+  title: "List/TagList",
   component: TagList,
   parameters: {
     layout: "centered",

@@ -26,6 +26,11 @@ const meta = {
       description: "텍스트 필드 id",
       defaultValue: "",
     },
+    type: {
+      options: ["text", "email", "password", "url"],
+      control: { type: "select" },
+      defaultValue: "text",
+    },
     placeholder: {
       control: "text",
       description: "텍스트 필드 도움말",
@@ -62,6 +67,7 @@ export const Default: Story = {
     iconPath: "/icons/ic-delete-dark.svg",
     id: "email",
     placeholder: "텍스트를 입력해 주세요.",
+    type: "text",
     value: "",
     errorMessage: "텍스트를 확인해 주세요.",
     isError: false,

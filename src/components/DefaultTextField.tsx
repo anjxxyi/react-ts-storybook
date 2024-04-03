@@ -4,6 +4,7 @@ import IconButton from "./IconButton";
 
 interface IDefaultTextFieldProps {
   id: string;
+  type: string;
   errorMessage: string;
   iconPath: string;
   iconAlt: string;
@@ -16,6 +17,7 @@ interface IDefaultTextFieldProps {
 
 export default function DefaultTextField({
   id,
+  type,
   errorMessage,
   iconPath,
   iconAlt,
@@ -43,8 +45,9 @@ export default function DefaultTextField({
         onBlur={() => setIsFocused(false)}
       >
         <input
-          type="text"
+          type={type}
           className="outline-none"
+          data-testid={id}
           id={id}
           placeholder={placeholder}
           value={value}

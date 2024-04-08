@@ -42,7 +42,9 @@ export default function LoginForm() {
       <PrimaryButton
         theme="dark"
         disabled={!email || !password}
-        onClick={() => {}}
+        onClick={() => {alert("Hello :)")
+        setEmail("")
+        setPassword("")}}
       >
         로그인
       </PrimaryButton>

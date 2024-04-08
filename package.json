@@ -1,8 +1,18 @@
 {
-  "name": "react-ts-storybook",
-  "private": true,
-  "version": "0.0.0",
+  "name": "anjxxyi-react-ts-storybook",
+  "description": "studying storybook(react-ts) and tailwindcss by anjxxyi",
+  "private": false,
+  "version": "0.0.1",
   "type": "module",
+  "files": [
+    "src/components",
+    "src/mixins",
+    "index.css"
+  ],
+  "main": "src/components/index.tsx",
+  "publishConfig": {
+    "access": "public"
+  },
   "license": "MIT",
   "scripts": {
     "dev": "vite",

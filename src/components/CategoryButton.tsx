@@ -23,7 +23,7 @@ export default function CategoryButton({
     <button
       className={`
         rounded-button-default 
-        px-5 py-4 
+        px-5 py-5 
         border 
         text-base font-bold
         bg-darkO-opacity
